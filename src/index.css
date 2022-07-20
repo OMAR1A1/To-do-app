@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+color: white;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  background-color: white;
+  width: 60%;
+  margin: 10% auto;
+  color: black;
+
+}
+.container p{
+  margin:0;
+  color: rgb(4 151 255);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.spanTitel span{
+  display: inline-block;
+  background-color: rgb(4, 151, 255);
+  border: 0.3px solid #ccc;
+  text-align: center;
+  color: white;
+}
+.showBox{
+  width: 100%;
+}
+.spanTitel{
+  width: 100%;
+}
+.spanTask{
+  width: 60%;
+}
+.spanTime{
+  width: 25%;
+}
+.spanDelete{
+  width: 15%;
+}
+.content{
+  width: 100%;
+  color: rgb(4 151 255);
+  display: flex;
+  text-align: center;
+}
+.TaskSpan{
+  width: 60%;
+}
+.TimeSpan{
+  width: 25%;
+}
+.DeleteSpan{
+  width: 15%;
+  cursor: pointer;
+}
+.content>span{
+  padding: 5px 10px;
+  border: 0.3px solid #ccc;
+}
+form{
+  padding: 0;
+}
+input[type=text] {
+  width: 60%;
+  padding: 5px 10px;
+  border: 0.3px solid #ccc;
+  background-color: rgb(230, 230, 230);
+  background-color: rgb(243 243 243);
+  font-family: none;
+  color: rgb(4 151 255);
+
+}
+input[type=number] {
+  width: 25%;
+  padding: 5px 10px;
+  border: 0.3px solid #ccc;
+  background-color: rgb(230, 230, 230);
+  background-color: rgb(243 243 243);
+  font-family: none;
+  color: rgb(4 151 255);
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=submit] {
+  width: 15%;
+  padding: 5px 10px;
+  border: 0.3px solid rgb(4 151 255);
+  font-family: none;
+color: white;
+background-color: rgb(4 151 255);
+}
+input:focus {
+  border: 0.3px solid  rgb(4 151 255);
+  outline: 0px;
+}
+input::placeholder{
+ color: rgb(179, 179, 179);
+ font-size: 10px;
+}
+.pTask{
+    padding: 10px !important;
+    text-align: center;
+}
